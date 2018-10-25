@@ -79,17 +79,17 @@
 
 
 
-<meta name="description" content="数组中有一个数字出现的次数超过数组长度的一半，请找出这个数字。例如输入一个长度为9的数组{1,2,3,2,2,2,5,4,2}。由于数字2在数组中出现了5次，超过数组长度的一半，因此输出2。如果不存在则输出0。  1234567891011121314151617181920212223242526272829303132public class Solution &amp;#123;   public">
+<meta name="description" content="快速排序比较经典的一种快速排序实现 12345678910111213141516171819202122232425262728293031323334353637public class quiksort &amp;#123;    public static void main(String args[])&amp;#123;        quiksort qs = new quiksort();">
 <meta property="og:type" content="article">
-<meta property="og:title" content="剑指offer题号39.数组中出现次数超过一半的数字">
-<meta property="og:url" content="http://yoursite.com/2018/06/21/剑指offer题号38. 字符串的排列/index.html">
+<meta property="og:title" content="排序算法总结">
+<meta property="og:url" content="http://yoursite.com/2018/08/18/排序算法总结/index.html">
 <meta property="og:site_name" content="57ing&#39;s Blog">
-<meta property="og:description" content="数组中有一个数字出现的次数超过数组长度的一半，请找出这个数字。例如输入一个长度为9的数组{1,2,3,2,2,2,5,4,2}。由于数字2在数组中出现了5次，超过数组长度的一半，因此输出2。如果不存在则输出0。  1234567891011121314151617181920212223242526272829303132public class Solution &amp;#123;   public">
+<meta property="og:description" content="快速排序比较经典的一种快速排序实现 12345678910111213141516171819202122232425262728293031323334353637public class quiksort &amp;#123;    public static void main(String args[])&amp;#123;        quiksort qs = new quiksort();">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-06-21T12:18:50.224Z">
+<meta property="og:updated_time" content="2018-08-18T08:15:05.055Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="剑指offer题号39.数组中出现次数超过一半的数字">
-<meta name="twitter:description" content="数组中有一个数字出现的次数超过数组长度的一半，请找出这个数字。例如输入一个长度为9的数组{1,2,3,2,2,2,5,4,2}。由于数字2在数组中出现了5次，超过数组长度的一半，因此输出2。如果不存在则输出0。  1234567891011121314151617181920212223242526272829303132public class Solution &amp;#123;   public">
+<meta name="twitter:title" content="排序算法总结">
+<meta name="twitter:description" content="快速排序比较经典的一种快速排序实现 12345678910111213141516171819202122232425262728293031323334353637public class quiksort &amp;#123;    public static void main(String args[])&amp;#123;        quiksort qs = new quiksort();">
 
 
 
@@ -119,13 +119,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2018/06/21/剑指offer题号38. 字符串的排列/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/08/18/排序算法总结/"/>
 
 
 
 
 
-  <title>剑指offer题号39.数组中出现次数超过一半的数字 | 57ing's Blog</title>
+  <title>排序算法总结 | 57ing's Blog</title>
   
 
 
@@ -232,7 +232,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/06/21/剑指offer题号38. 字符串的排列/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/08/18/排序算法总结/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="57ing">
@@ -249,7 +249,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">剑指offer题号39.数组中出现次数超过一半的数字</h1>
+          <h1 class="post-title" itemprop="name headline">排序算法总结</h1>
         
 
         <div class="post-meta">
@@ -261,8 +261,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-06-21T20:18:18+08:00">
-                2018-06-21
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-08-18T16:13:12+08:00">
+                2018-08-18
               </time>
             
 
@@ -299,9 +299,8 @@
       
 
       
-        <p>数组中有一个数字出现的次数超过数组长度的一半，请找出这个数字。例如输入一个长度为9的数组{1,2,3,2,2,2,5,4,2}。由于数字2在数组中出现了5次，超过数组长度的一半，因此输出2。如果不存在则输出0。 </p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">   <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">       Solution solution = <span class="keyword">new</span> Solution();</span><br><span class="line">   &#125;</span><br><span class="line"></span><br><span class="line">   <span class="keyword">private</span> ArrayList&lt;ArrayList&lt;Character&gt;&gt; ret;</span><br><span class="line"></span><br><span class="line">   <span class="keyword">public</span> ArrayList&lt;ArrayList&lt;Character&gt;&gt; permutation(String str)&#123;</span><br><span class="line">       <span class="keyword">if</span> (str.length() == <span class="number">0</span>) &#123;</span><br><span class="line">           <span class="keyword">return</span> <span class="keyword">null</span>;</span><br><span class="line">       &#125;</span><br><span class="line">       <span class="keyword">char</span>[] chars = str.toCharArray();</span><br><span class="line">       Arrays.sort(chars);</span><br><span class="line">       backtracking(chars, <span class="keyword">new</span> <span class="keyword">boolean</span>[chars.length], <span class="keyword">new</span> ArrayList&lt;Character&gt;());</span><br><span class="line">       <span class="keyword">return</span> ret;</span><br><span class="line">   &#125;</span><br><span class="line">   <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">backtracking</span><span class="params">(<span class="keyword">char</span>[] chars, <span class="keyword">boolean</span>[] hased, ArrayList&lt;Character&gt; tmp)</span></span>&#123;</span><br><span class="line">       <span class="keyword">if</span> (tmp.size() == chars.length)&#123;</span><br><span class="line">           ret.add(tmp);</span><br><span class="line">           <span class="keyword">return</span>;</span><br><span class="line">       &#125;</span><br><span class="line">       <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span> ; i &lt; chars.length; i++)&#123;</span><br><span class="line">           <span class="keyword">if</span> (hased[i]) <span class="keyword">continue</span>;</span><br><span class="line">           <span class="keyword">if</span> (i != <span class="number">0</span> &amp;&amp; chars[i] == chars[i-<span class="number">1</span>] &amp;&amp; !hased[i-<span class="number">1</span>]) <span class="keyword">continue</span>; <span class="comment">//此处是最为关键的一步，对于出现重复的情况，比如aaa，只要用到第二个a而没有用到第一个a时，说明此时已经时重复了，故不做处理。</span></span><br><span class="line">           hased[i] = <span class="keyword">true</span>;</span><br><span class="line">           tmp.add(chars[i]);</span><br><span class="line">           backtracking(chars, hased, tmp);</span><br><span class="line">           tmp.remove(tmp.size());</span><br><span class="line">           hased[i] = <span class="keyword">false</span>;</span><br><span class="line">       &#125;</span><br><span class="line">   &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>简单粗暴的方法，方法的时间复杂度为o（n！）</p>
+        <h1 id="快速排序"><a href="#快速排序" class="headerlink" title="快速排序"></a>快速排序</h1><p>比较经典的一种快速排序实现</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br></pre></td><td class="code"><pre><span class="line">public class quiksort &#123;</span><br><span class="line">    public static void main(String args[])&#123;</span><br><span class="line">        quiksort qs = new quiksort();</span><br><span class="line">        int[] list = new int[]&#123;1&#125;;</span><br><span class="line">        qs.quicksort(list, 0, list.length - 1 );</span><br><span class="line">        for (int i = 0; i &lt; list.length; i++)&#123;</span><br><span class="line">            System.out.print(list[i] + &quot; &quot;);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    private void quicksort(int[] list, int i, int j)&#123;</span><br><span class="line">        if (i &lt; j)&#123;</span><br><span class="line">            int cu = partion(list, i, j);</span><br><span class="line">            quicksort(list, i, cu -1 );</span><br><span class="line">            quicksort(list, cu +1, j);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    private  int partion(int[] list, int i, int j)&#123;</span><br><span class="line">        int x = list[j];</span><br><span class="line">        int cu = i - 1;</span><br><span class="line">        for (int tmp = i; tmp &lt; j; tmp ++)&#123;</span><br><span class="line">            if (list[tmp] &lt; x)&#123;</span><br><span class="line">                cu++;</span><br><span class="line">                swap(list, cu, tmp);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        cu++;</span><br><span class="line">        swap(list, cu, j);</span><br><span class="line">        return cu;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    private void swap(int[] list, int i, int j)&#123;</span><br><span class="line">        int tmp = list[i];</span><br><span class="line">        list[i] = list[j];</span><br><span class="line">        list[j] = tmp;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
       
     </div>
@@ -326,8 +325,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/06/19/docker学习之发布自己的python项目镜像/" rel="next" title="docker学习之发布自己的python项目镜像">
-                <i class="fa fa-chevron-left"></i> docker学习之发布自己的python项目镜像
+              <a href="/2018/08/12/二叉树的非递归遍历/" rel="next" title="二叉树的非递归遍历">
+                <i class="fa fa-chevron-left"></i> 二叉树的非递归遍历
               </a>
             
           </div>
@@ -336,8 +335,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2018/08/12/二叉树的非递归遍历/" rel="prev" title="二叉树的非递归遍历">
-                二叉树的非递归遍历 <i class="fa fa-chevron-right"></i>
+              <a href="/2018/08/18/搜索算法总结/" rel="prev" title="搜索算法总结">
+                搜索算法总结 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -390,8 +389,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -442,6 +450,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#快速排序"><span class="nav-number">1.</span> <span class="nav-text">快速排序</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
