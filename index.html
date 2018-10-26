@@ -305,8 +305,8 @@
 <p>首先判断该点是否在多边形中，就用到了标题的PNPloy算法。</p>
 <p>PNPloy算法的基本思想为射线法。</p>
 <p>射线法：</p>
-<p><img src="https://jingsam.github.io/assets/ray.gif" alt="ray"></p>
-<p><img src="https://jingsam.github.io/assets/ray2.png" alt="ray2"></p>
+<p><img src="http://ph6s4kugu.bkt.clouddn.com/ray.gif" alt="ray"></p>
+<p><img src="http://ph6s4kugu.bkt.clouddn.com/ray2.png" alt="ray2"></p>
 <p>如上图所示：</p>
 <p>红点或黑点为目标点</p>
 <p>一目标点为起点发射一条射线，观察射线与多边形的交点</p>
@@ -314,13 +314,13 @@
 <p>如果目标点不在多边形内，交点数为偶数个</p>
 <p>此外还有几种特殊情况：</p>
 <p>1.目标点在多边形边上</p>
-<p><img src="C:\Users\ng\AppData\Local\Temp\1536482831840.png" alt="1536482831840"></p>
+<p><img src="http://ph6s4kugu.bkt.clouddn.com/ray3.png" alt="1536482831840"></p>
 <p>2.目标点与多边形的点重合</p>
-<p><img src="C:\Users\ng\AppData\Local\Temp\1536482870928.png" alt="1536482870928"></p>
+<p><img src="http://ph6s4kugu.bkt.clouddn.com/ray4.png" alt="1536482870928"></p>
 <p>3.目标点发出的射线经过多边形的点</p>
-<p><img src="C:\Users\ng\AppData\Local\Temp\1536482898659.png" alt="41536482898659"></p>
+<p><img src="http://ph6s4kugu.bkt.clouddn.com/ray5.png" alt="41536482898659"></p>
 <p>4.目标点发出的射线与多边形的边重合</p>
-<p><img src="C:\Users\ng\AppData\Local\Temp\1536483024647.png" alt="1536483024647"></p>
+<p><img src="http://ph6s4kugu.bkt.clouddn.com/ray6.png" alt="1536483024647"></p>
 <p>对这三种情况的特殊处理：</p>
 <ul>
 <li><p>对于情况1，需要计算目标点与两个多边形顶点的连线斜率是否相等，但是在同一直线上不代表目标点就在边上，也可能是在边的延长线上，所以还需要考虑两个多边形顶点和目标点的坐标大小关系。需要满足x1 =&lt; x =&lt; x2或y1&lt;= y  &lt;= y2。</p>
@@ -330,7 +330,7 @@
 <li><p>对于情况3，可以将射线与点相交看作射线与边相交。具体做法是，做一个规定，如果一个点与目标点的射线相交，那么我们便认为这个点在射线的上方。</p>
 </li>
 </ul>
-<p><img src="C:\Users\ng\AppData\Local\Temp\1536485853818.png" alt="1536485853818"></p>
+<p><img src="http://ph6s4kugu.bkt.clouddn.com/ray7.png" alt="1536485853818"></p>
 <p>如图所示：</p>
 <p>对于x点，认定D点在x发出的射线上方，故射线与边AD、CD相交，交点数为偶数，所以x在多边形外</p>
 <p>同理，对于y点，CD与射线不相交，BC与射线相交，交点数为奇数，所欲y在多边形内</p>
